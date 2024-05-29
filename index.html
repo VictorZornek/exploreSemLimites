@@ -14,13 +14,16 @@
 <body>
     <div id="app">
         <main class="container">
-            <img src="./assets/img01.svg" alt="Imagem de um astronauta no espaço">
+            <section class="astronaut">
+                <img src="./assets/img01.svg" alt="Imagem de um astronauta no espaço">
         
-            <h1>Explore sem limtes</h1>
+                <h1>Explore sem limtes</h1>
+    
+                <p class="title-text">Porque o aprendizado é contínuo</p>
+    
+                <img id="arrow-img" src="./assets/img02.svg" alt="Seta apontando para baixo">
+            </section>
 
-            <p>Porque o aprendizado é contínuo</p>
-
-            <img src="./assets/img02.svg" alt="Seta apontando para baixo">
 
             <section class="reasons">
                 <div class="wrapper-content">
@@ -52,16 +55,25 @@
                 <h1>Entre em contato</h1>
 
                 <form action="">
-                    <input type="text" name="name" id="name" placeholder="Seu nome">
-                    
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <fieldset>
+                        <div class="input-wrapper">
+                            <label for="name"><img src="./assets/iconNameInput.svg" alt="Icone Input"></label>
+                            <input type="text" name="name" id="name" placeholder="Seu nome">    
+                        </div>
 
-                    <textarea name="message" id="message" placeholder="Digite sua mensagem aqui..." cols="10"></textarea>
+                        <div class="input-wrapper">
+                            <label for="email"><img src="./assets/iconEmailInput.svg" alt="Icone Input"></label>
+                            <input type="email" name="email" id="email" placeholder="Email">    
+                        </div>
+
+                        <div class="input-wrapper">
+                            <textarea name="message" id="message" placeholder="Digite sua mensagem aqui..." cols="10"></textarea>
+                        </div>
+
+                        <button type="submit">Enviar Mensagem</button>
+                    </fieldset>
+
                 </form>
-
-                <button>
-                    Enviar Mensagem
-                </button>
             </section>
         </main>
 

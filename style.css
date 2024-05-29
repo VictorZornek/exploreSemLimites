@@ -8,4 +8,156 @@
 
 :root {
     font-size: 62.5%;
+
+    --color-base-pink: #B52184;
+    --text-base-color: #312D64;
+    --background-base-blue: #343193;
+    --background-base-white: #F9F4FB;
+    --white: #FFFFFF;
 }
+
+html, body, input, textarea {
+    font-family: 'Mulish', sans-serif;
+}
+
+#app {
+    width: min(112rem, 100%); /* -> pega a largura minima entre 112rem e 100% (100% seria 1200 pixels) */
+    margin: 0 auto;
+}
+
+.astronaut {
+    width: 100%;
+    padding: 0 3.2rem 0 3.4rem;
+
+    text-align: center;
+    background-color: var(--background-base-white);
+}
+
+h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    margin: 1.7rem 0 0.5rem;
+
+    color: var(--color-base-pink);
+}
+
+.title-text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+
+    color: var(--text-base-color);
+}
+
+#arrow-img {
+    margin-bottom: 9.3rem;
+}
+
+.reasons {
+    padding: 5.3rem 3.9rem 0.3rem;
+
+    background-color: var(--background-base-blue);
+}
+
+h2 {
+    font-size: 2.9rem;
+    line-height: 3.7rem;
+    font-weight: 900;
+    margin: 3.3rem 0 2rem;
+
+    color: var(--color-base-pink);
+}
+
+.wrapper-content p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+
+    color: var(--text-base-color);
+}
+
+.wrapper-content {
+    border-radius: 2rem;
+    width: 35.2rem;
+    padding: 2.65rem;
+    margin-bottom: 5rem;
+    
+    background-color: var(--white);
+}
+
+.contact {
+    padding: 7.8rem 4rem 0 3.9rem;
+
+    background-color: var(--background-base-white);
+}
+
+.contact h1 {
+    margin-bottom: 4.3rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.input-wrapper {
+    display: flex;
+    gap: 1.2rem;
+
+    border: solid 2px;
+    border-radius: 1.6rem;
+    border-color: var(--text-base-color);
+
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.contact input, textarea {
+    width: 100%;
+    border: none;
+    background-color: var(--background-base-white);
+}
+
+textarea {
+    height: 12.6rem;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    color: var(--text-base-color);
+}
+
+button {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+
+    border-style: none;
+    border-radius: 1.6rem;
+
+    padding: 1rem 1.6rem;
+    color: var(--white);
+    background-color: var(--background-base-blue);
+
+    margin-bottom: 9.5rem;
+}
+
+button:hover {
+    background-color: #3e39e3;
+}
+
+footer {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+
+    text-align: center;
+
+    padding: 3.2rem;
+    
+    background-color: var(--background-base-blue);
+}
+
