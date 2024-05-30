@@ -21,8 +21,9 @@ html, body, input, textarea {
 }
 
 #app {
-    width: min(112rem, 100%); /* -> pega a largura minima entre 112rem e 100% (100% seria 1200 pixels) */
+    width: min(152rem, 100%); /* -> pega a largura minima entre 112rem e 100% (100% seria 1200 pixels) */
     margin: 0 auto;
+    height: 100vh;
 }
 
 .astronaut {
@@ -56,8 +57,12 @@ h1 {
 }
 
 .reasons {
-    padding: 5.3rem 3.9rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    padding: 5.3rem 3.9rem 0.3rem;
+    
     background-color: var(--background-base-blue);
 }
 
@@ -66,7 +71,7 @@ h2 {
     line-height: 3.7rem;
     font-weight: 900;
     margin: 3.3rem 0 2rem;
-
+    
     color: var(--color-base-pink);
 }
 
@@ -74,7 +79,7 @@ h2 {
     font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 600;
-
+    
     color: var(--text-base-color);
 }
 
@@ -149,6 +154,11 @@ button:hover {
     background-color: #3e39e3;
 }
 
+.stars {
+    display: none;
+}
+
+
 footer {
     font-size: 2rem;
     font-weight: 600;
@@ -161,3 +171,94 @@ footer {
     background-color: var(--background-base-blue);
 }
 
+
+
+/* media queries */
+
+@media (min-width: 1400px) {
+    .astronaut {
+        display: flex;
+        gap: 20rem;
+    }
+
+    .astronaut-img {
+        order: 2;
+
+    }
+
+    .astronaut-img img {
+        width: 59rem;
+        height: 60rem;
+    }
+
+    .astronaut-title-wrapper {
+        text-align: start;
+
+        margin: 15rem 0 0 11rem;
+    }
+
+    .astronaut-title-wrapper h1{
+        font-size: 5.8rem;
+        line-height: 7.3rem;
+
+        margin-bottom: 0.8rem;
+    }
+
+    .astronaut-title-wrapper p {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 18rem;
+    }
+
+    .reasons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 6rem;
+    }
+    
+    .wrapper-content img {
+        width: 9.7rem;
+        height: 9.7rem;
+    }
+
+    .wrapper-content h2 {
+        font-size: 3.5rem;
+        line-height: 4.4rem;
+    }
+
+    .wrapper-content p {
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        gap: 9.2rem;
+
+        position: relative;
+
+    }
+
+    .contact h1 {
+        font-size: 4.2rem;
+        line-height: 5.3rem;
+    }
+
+    .contact form {
+        flex: 0.45;
+        margin-left: 10.9rem;
+    }
+
+    .stars {
+        display: flex;
+        flex: 1;
+        
+        position: absolute; /* Continua sendo posicionado relativamente ao pai */
+        bottom: 0;
+        right: 0;
+        margin: 0.2rem;
+    }
+
+}
